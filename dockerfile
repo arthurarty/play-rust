@@ -5,13 +5,13 @@ FROM rust:latest
 WORKDIR /usr/src/app
 
 # Copy the local Cargo.toml and Cargo.lock files to the container
-COPY Cargo.toml Cargo.lock ./
+# COPY Cargo.toml Cargo.lock ./
 
 # Build and cache dependencies
 RUN cargo build --release
 
 # Copy the source code into the container
-COPY src ./src
+COPY . .
 
 # Build the Rust application
 RUN cargo build --release
