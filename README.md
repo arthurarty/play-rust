@@ -1,4 +1,6 @@
 # play-rust
+## Docs
+- [Rust examples](https://doc.rust-lang.org/rust-by-example/mod.html)
 
 ## How to compile
 Assuming you have a file called 
