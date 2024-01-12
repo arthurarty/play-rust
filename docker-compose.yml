@@ -1,0 +1,8 @@
+version: '3'
+services:
+  my-rust-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: my-rust-app
+    restart: always
