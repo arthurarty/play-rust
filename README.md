@@ -80,3 +80,32 @@ rustup component add clippy
 Add a file called `clippy.toml` in the root directory of the project.  
 
 [Read more](https://doc.rust-lang.org/nightly/clippy/lint_configuration.html)
+
+
+### Turn on/off lint warnings
+Given a code snippet like this one:
+```rust
+fn main() {
+    let x = 6;
+    println!("Hello, Rust!");
+}
+```
+This will raise a warning for the unused variable x. Turn off warnings for `unused variables` we can add `#![allow(unused_variables)]` at the top of the file.
+```rust
+#![allow(unused_variables)]
+
+fn main() {
+    let x = 6;
+    println!("Hello, Rust!");
+}
+```
+Alternative we can change the `warning` to a complete denial like this.
+```rust
+#![deny(unused_variables)]
+
+fn main() {
+    let x = 6;
+    println!("Hello, Rust!");
+}
+```
+[Read more](https://doc.rust-lang.org/rustc/lints/levels.html) on lint levels.
