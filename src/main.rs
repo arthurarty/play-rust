@@ -5,6 +5,6 @@ fn main() {
     println!("Hello, Rust!");
 }
 
-// fn do_sum(x, y, i, j, k, a) {
-//     println!("got a bunch of args");
-// }
+fn DOSUM() {
+    println!("got a bunch of args");
+}

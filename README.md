@@ -77,12 +77,17 @@ rustup component add clippy
 ```
 
 ### Lint configuration
-Add a file called `clippy.toml` in the root directory of the project.  
-
+Add a file called `clippy.toml` in the root directory of the project.
+```toml
+# Limit arguments per function
+too-many-arguments-threshold = 5
+```
+See [full list](https://doc.rust-lang.org/nightly/clippy/lint_configuration.html) of values that be set.
+Note: `The clippy.toml file` cannot be used to allow or deny lints directly. Use code attributes for that purpose.
 [Read more](https://doc.rust-lang.org/nightly/clippy/lint_configuration.html)
 
 
-### Turn on/off lint warnings
+### Turn on/off lint warnings (allow or deny lints directly)
 Given a code snippet like this one:
 ```rust
 fn main() {
