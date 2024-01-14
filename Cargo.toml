@@ -3,8 +3,7 @@ name = "play-rust"
 version = "0.1.0"
 authors = ["Nangai Arthur"]
 
-[[bin]]
-name = "play-rust"
-path = "src/main.rs"
+
+
 
 [dependencies]
