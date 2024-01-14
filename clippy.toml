@@ -1,0 +1,3 @@
+# Limit arguments per function
+too-many-arguments-threshold = 5
+

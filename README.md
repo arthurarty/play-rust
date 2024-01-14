@@ -75,3 +75,8 @@ Run the command.
 ```bash
 rustup component add clippy
 ```
+
+### Lint configuration
+Add a file called `clippy.toml` in the root directory of the project.  
+
+[Read more](https://doc.rust-lang.org/nightly/clippy/lint_configuration.html)
