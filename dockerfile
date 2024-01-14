@@ -13,6 +13,10 @@ COPY Cargo.toml Cargo.lock ./
 # Copy the source code into the container
 COPY . .
 
+RUN rustup component add clippy
+
+VOLUME ["/usr/src/app"]
+
 # Build the Rust application
 # RUN cargo build --release
 
